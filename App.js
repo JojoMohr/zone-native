@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, Text, SafeAreaView, Image } from "react-native";
+import style from "./App.module.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import SoundCard from "./Components/SoundCard";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    return (
+        <>
+            <SafeAreaView>
+                <View style={style.container}>
+                    <Header></Header>
+                    <SoundCard
+                        image={require("./assets/cloud-drizzle.png")}
+                    ></SoundCard>
+                    <SoundCard image={require("./assets/wind.png")}></SoundCard>
+                    <SoundCard
+                        image={require("./assets/cloud-lightning.png")}
+                    ></SoundCard>
+                    <SoundCard
+                        image={require("./assets/coffee.png")}
+                    ></SoundCard>
+                    <SoundCard image={require("./assets/moon.png")}></SoundCard>
+                    <SoundCard
+                        image={require("./assets/white-noise.png")}
+                    ></SoundCard>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+                    <Footer></Footer>
+                </View>
+            </SafeAreaView>
+        </>
+    );
+}

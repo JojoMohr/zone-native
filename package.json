@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "Zone",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -9,10 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/slider": "^4.4.2",
+    "babel-plugin-react-native-classname-to-style": "^1.2.2",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
     "expo": "~47.0.12",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-native": "0.70.5",
+    "react-native-css-transformer": "^1.2.4",
+    "react-native-paper": "^5.2.0",
+    "react-native-slider": "^0.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
